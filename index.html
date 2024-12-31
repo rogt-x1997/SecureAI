@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SECURE AI - Startup Success Prediction</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gradient-to-br from-gray-50 to-blue-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-blue-600">SECURE AI</span>
+                    <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">SECURE AI</span>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#benefits" class="text-gray-700 hover:text-blue-600">Benefits</a>
-                    <a href="https://www.securecanvas.net/secure-ai" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Get Started</a>
+                <div class="flex items-center space-x-6">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#workflow" class="text-gray-700 hover:text-blue-600 transition">Workflow</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition">Benefits</a>
+                    <a href="https://www.securecanvas.net/secure-ai" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:opacity-90 transition">Get Started</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="bg-blue-600 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">S.E.C.U.R.E. Artificial Intelligence</h1>
-                <p class="text-xl mb-8">Revolutionizing Startup Success Prediction with AI</p>
-                <a href="https://www.securecanvas.net/secure-ai" class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100">Access Platform</a>
+    <div class="pt-24 bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-20">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-5xl font-bold mb-6">S.E.C.U.R.E. Artificial Intelligence</h1>
+                <p class="text-xl mb-8 text-blue-100">Revolutionizing Startup Success Prediction with AI</p>
+                <a href="https://www.securecanvas.net/secure-ai" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">Access Platform</a>
             </div>
         </div>
     </div>
@@ -37,52 +40,67 @@
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-4 py-16">
         <!-- About Section -->
-        <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">About SECURE AI</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <p class="text-gray-700 leading-relaxed">
+        <section id="about" class="mb-20">
+            <h2 class="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">About SECURE AI</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-gray-700 text-lg leading-relaxed">
                         SECURE AI integrates the multidimensional SECURE model with advanced machine learning algorithms to provide data-driven insights and illuminate entrepreneurial outcomes amidst ambiguity. By training advanced machine learning algorithms on datasets covering SECURE metrics, subtle patterns governing success can be uncovered to forecast likelihood precisely.
                     </p>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg">
-                    <img src="/api/placeholder/600/400" alt="AI Analytics Dashboard" class="rounded-lg shadow-md"/>
+                <div class="bg-white p-8 rounded-2xl shadow-xl" data-aos="fade-left">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIj4KICAgIDxkZWZzPgogICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnR3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzYzQjNFRDsiIC8+CiAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojOUI1OUI2OyIgLz4KICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYmdHcmFkKSIgb3BhY2l0eT0iMC4xIi8+CiAgICA8IS0tIEFkZCB5b3VyIHNwZWNpZmljIHN2ZyBjb250ZW50IGhlcmUgLS0+Cjwvc3ZnPg==" alt="AI Analytics Dashboard" class="rounded-lg shadow-md"/>
                 </div>
             </div>
         </section>
 
+        <!-- Workflow Section -->
+        <section id="workflow" class="mb-20">
+            <h2 class="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">How It Works</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-xl" data-aos="zoom-in">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 400'%3E%3Cstyle%3E.diagram-text%7Bfont-family:Arial%3Bfont-size:12px%7D%3C/style%3E%3Cg fill='%23FFD700'%3E%3Crect x='50' y='80' width='120' height='40' rx='5'/%3E%3Ctext x='110' y='100' class='diagram-text' text-anchor='middle'%3EDESIRABILITY%3C/text%3E%3C/g%3E%3C!-- Add more SVG elements to match your diagram --%3E%3C/svg%3E" alt="SECURE AI Workflow" class="w-full max-w-4xl mx-auto"/>
+            </div>
+        </section>
+
         <!-- Benefits Section -->
-        <section id="benefits" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Benefits of SECURE AI</h2>
+        <section id="benefits" class="mb-20">
+            <h2 class="text-4xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Benefits of SECURE AI</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Data-Backed Insights</h3>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="0">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Data-Backed Insights</h3>
                     <p class="text-gray-700">Evidence-based planning and objective compass to navigate uncertainties</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Business Optimization</h3>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Business Optimization</h3>
                     <p class="text-gray-700">Identify improvement areas and optimize resource allocation strategies</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Success Forecasting</h3>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">Success Forecasting</h3>
                     <p class="text-gray-700">Precisely forecast success likelihood and aid investors in opportunity evaluation</p>
                 </div>
             </div>
         </section>
 
         <!-- Call to Action -->
-        <section class="text-center bg-gray-100 p-12 rounded-lg">
-            <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Startup Journey?</h2>
-            <p class="text-gray-700 mb-8">Join the next frontier of entrepreneurial analytics</p>
-            <a href="https://www.securecanvas.net/secure-ai" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">Start Using SECURE AI</a>
+        <section class="text-center bg-gradient-to-r from-blue-600 to-purple-600 p-16 rounded-2xl shadow-xl text-white">
+            <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Startup Journey?</h2>
+            <p class="text-xl mb-8 text-blue-100">Join the next frontier of entrepreneurial analytics</p>
+            <a href="https://www.securecanvas.net/secure-ai" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition shadow-lg">Start Using SECURE AI</a>
         </section>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-12 mt-20">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p>&copy; 2024 SECURE AI. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
